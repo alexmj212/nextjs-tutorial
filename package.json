@@ -5,10 +5,10 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "next",
-        "build": "next build",
+        "dev": "next src",
+        "build": "next build src",
         "export": "next export -o docs src",
-        "start": "next start"
+        "start": "next start src"
     },
     "keywords": [],
     "author": "",
