@@ -1,18 +1,10 @@
-import Link from 'next/link'
-
-const linkStyle = {
-    marginRight: 15
-}
+import HeaderLink from '../components/HeaderLink'
 
 const Header = () => (
-    <div>
-        <Link href="/">
-            <a style={linkStyle}>Home</a>
-        </Link>
-        <Link href="about">
-            <a style={linkStyle}>About</a>
-        </Link>
-    </div>
+    <ul>
+        <HeaderLink href="/" as="/" title="Home"></HeaderLink>
+        <HeaderLink href="/about?title=About" as="/about" title="About"></HeaderLink>
+    </ul>
 )
 
 export default Header
